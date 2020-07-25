@@ -1,0 +1,42 @@
+.titlebar-image {
+    border-radius: 50%;
+    margin : 7px 10px;
+    height:40px;
+    width: auto;
+    float:right;
+}
+
+.titlebar-logo{
+    border-radius: 50%;
+    margin : 3px 10px;
+    height:50px;
+    width: auto;
+    float:left;
+}
+
+.titlebar{
+    background-color:red;
+    height:60px;
+    margin :0px;
+    padding:0px;
+}
+
+.titlebar-username{
+    margin-right :15px;
+    float:right;   
+    font-family: Georgia;
+    color:white;
+    font-weight: 100;
+}
+
+.titlebar-sitename{
+    margin-right :15px;
+    float:left;   
+    font-family: Georgia;
+    color : white;
+}
+
+body{
+    margin : 0px;
+    background-color: whitesmoke;
+}
