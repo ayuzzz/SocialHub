@@ -22,12 +22,13 @@
 .post-title{
     color:blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: -15px;
 
 }
 
-.post-description{
+/* .post-description{
 
-}
+} */
 
 .post-image{
     width: 100%;
@@ -41,4 +42,37 @@
     background-color: white;
     border:1px solid #C0C0C0;
     box-shadow: 0 5px 10px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+}
+
+.AddPost{
+    width: 100%;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    float:right;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form{
+    text-align: center;
+    width: 25%;
+    margin : auto;
+}
+
+form input{
+    margin : 10px auto;
+    display : block;
+    width:100%;
+    padding : 10px;
+    border: 2px solid silver;
+}
+
+.submit-button{
+    background-color: #086277;
+    color:white;
 }

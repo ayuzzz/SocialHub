@@ -3,11 +3,12 @@ import TiTleBar from './TitleBar/TitleBar'
 import PostWall from './Posts/PostWall';
 
 class Main extends Component{
+
     render()
     {
         return <div>
                     <TiTleBar/>
-                    <PostWall/> 
+                    <PostWall {...this.props} onHistory={History}/> 
                 </div>       
     }
 }
