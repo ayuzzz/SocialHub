@@ -9,19 +9,19 @@ class PostWall extends Component{
     render()
     {
         return  <div>
-                    <Route exact path="/" render = {() => 
+                    <Route exact path="/" render = {(history) => 
                         (
                             <div className="postwall">
                                 <SideMenu/>
-                                <PostArea {...this.props}/>
+                                <PostArea {...this.props}History = {history}/>
                             </div>
                         )}/>
 
-                    <Route exact path="/AddPost" render = {() => 
+                    <Route exact path="/AddPost" render = {(history) => 
                         (
                                 <div className="postwall">
                                     <SideMenu/>
-                                    <AddPost {...this.props}/>
+                                    <AddPost {...this.props} History = {history}/>
                                 </div>
                         )}/>
                 </div>

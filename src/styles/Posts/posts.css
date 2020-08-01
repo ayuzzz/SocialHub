@@ -2,7 +2,7 @@
     width: 100%;
     margin: 10px;
     margin-right: 0px;
-    background-color: white;
+    background-color:lightsteelblue;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     float:right;
 }
@@ -58,7 +58,7 @@ h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-form{
+.add-post-form{
     text-align: center;
     width: 25%;
     margin : auto;
@@ -75,4 +75,33 @@ form input{
 .submit-button{
     background-color: #086277;
     color:white;
+}
+
+.comments-and-likes{
+    margin-left: 0px;
+}
+
+.comment{
+    outline : 0;
+    color : green;
+    margin-top : 5px;
+    margin-bottom: 5px;
+    border:none;
+    display: block;
+    background-color: lightsteelblue;
+    width: 80%;
+    text-overflow: ellipsis;
+    border-radius: 15px 15px;
+    padding:5px
+}
+
+.new-comment{
+    outline : 0;
+    color : lightseagreen;
+    border-width: 0 0 2px;
+    border-color: darkgreen;
+    margin-top : 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    width: 80%;
 }

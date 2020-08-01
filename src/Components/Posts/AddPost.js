@@ -14,7 +14,7 @@ constructor()
         console.log(this.props);
         return <div className="AddPost">
                     <h1>Add Post</h1>
-                    <form onSubmit={this.handleSubmit}>                        
+                    <form className = "add-post-form" onSubmit={this.handleSubmit}>                        
                         <input id="title" name = "title" type="text" placeholder="Title"/>
                         <input id="imageUrl" name = "imageUrl" type="text" placeholder="Image Url"/>
                         <input id="description" name = "description" type="text" placeholder="Post Description"/><br/>
@@ -31,11 +31,12 @@ constructor()
             title : event.target.elements.title.value,
             description : event.target.elements.description.value,
             imageUrl : event.target.elements.imageUrl.value,
-            postDate : new Date()
+            postDate : new Date(),
+            comments:[]
         }
         this.props.addPost(post)
 
-        //this.props.onHistory.push("/")      
+        this.props.History.history.push("/")      
     }
 
 }

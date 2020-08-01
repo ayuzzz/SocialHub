@@ -8,7 +8,7 @@ class Main extends Component{
     {
         return <div>
                     <TiTleBar/>
-                    <PostWall {...this.props} onHistory={History}/> 
+                    <PostWall {...this.props}/> 
                 </div>       
     }
 }

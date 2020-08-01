@@ -5,12 +5,10 @@ import Post from '../Posts/Post';
 class PostArea extends Component{
     render()
     {
-        const posts = this.props.posts;
 
         return <div className="postarea">
-                    {posts.map(post => <Post post = {post} key={post.id}/>)
-                    }                    
-               </div>
+                    {this.props.posts.map(post => <Post post = {post} key={post.id} addComment = {this.props.addComment} History = {this.props.History}/>)}                    
+                    </div>
     }
 }
 
