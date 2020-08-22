@@ -14,3 +14,11 @@ export function addComment(postId, comment)
         comment : comment
     }
 }
+
+export function likePost(postId)
+{
+    return{
+        type : 'LIKE_POST',
+        postId : postId
+    }
+}

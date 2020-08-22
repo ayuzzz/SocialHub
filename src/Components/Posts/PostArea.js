@@ -7,7 +7,7 @@ class PostArea extends Component{
     {
 
         return <div className="postarea">
-                    {this.props.posts.map(post => <Post post = {post} key={post.id} addComment = {this.props.addComment} History = {this.props.History}/>)}                    
+                    {this.props.posts.map(post => <Post post = {post} key={post.id} likePost = {this.props.likePost} addComment = {this.props.addComment} History = {this.props.History}/>)}                    
                     </div>
     }
 }

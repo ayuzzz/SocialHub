@@ -21,7 +21,7 @@ class Post extends Component{
                     <p className="post-datetime"><small>{postDate}</small></p>
                     <img src = {imageUrl} className="post-image" alt={this.props.post.id}/>
                     <p className="post-description">{description}</p>
-                    <CommentsAndLikes post = {this.props.post} addComment = {this.props.addComment} History={this.props.History}/>
+                    <CommentsAndLikes post = {this.props.post} likePost = {this.props.likePost} addComment = {this.props.addComment} History={this.props.History}/>
                </div>
     }
 }

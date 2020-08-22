@@ -13,7 +13,7 @@ class PostWall extends Component{
                         (
                             <div className="postwall">
                                 <SideMenu/>
-                                <PostArea {...this.props}History = {history}/>
+                                <PostArea {...this.props} History = {history}/>
                             </div>
                         )}/>
 

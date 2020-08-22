@@ -11,7 +11,20 @@ const postReducer = function allposts(state = posts, action)
                     {
                         post.comments.push(action.comment)
                     }
-                return state})
+                    console.log(state)
+                })
+                return state
+                
+        case 'LIKE_POST':
+            state.map(post => {
+                if(post.id === action.postId)
+                {
+                    post.likes += 1
+                }
+                console.log(state)
+            })
+            return state
+            
         default : return state
     }
 }
