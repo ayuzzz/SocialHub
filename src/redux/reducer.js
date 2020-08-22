@@ -11,7 +11,6 @@ const postReducer = function allposts(state = posts, action)
                     {
                         post.comments.push(action.comment)
                     }
-                    console.log(state)
                 })
                 return state
                 
@@ -21,7 +20,6 @@ const postReducer = function allposts(state = posts, action)
                 {
                     post.likes += 1
                 }
-                console.log(state)
             })
             return state
             
